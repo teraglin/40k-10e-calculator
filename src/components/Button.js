@@ -17,10 +17,19 @@ const StyledButton = styled.button`
   border: 0;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
 `;
 
-const Button = ({ children, color }) => {
-  return <StyledButton $color={color}>{children}</StyledButton>;
+const Button = ({ children, color, onClickHandler, value }) => {
+  return (
+    <StyledButton
+      onClick={onClickHandler}
+      $color={color}
+      value={value ? value : ""}
+    >
+      {children}
+    </StyledButton>
+  );
 };
 
 export default Button;

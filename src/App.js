@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import data from "./data";
-import UnitCard from "./components/UnitCard";
 import Button from "./components/Button";
+import Modal from "./modules/Modal";
 
 console.log("data", data);
 
@@ -12,6 +12,7 @@ const AppContainer = styled.div`
   align-items: center;
   padding: 16px 32px;
   gap: 16px;
+  position: relative;
 `;
 
 const Heading = styled.h1`
@@ -22,13 +23,13 @@ const Heading = styled.h1`
   text-align: center;
 `;
 
-const UnitList = styled.ul`
-  padding: 0;
-  width: 100%;
-`;
-
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [modal, setModal] = useState(false);
+
+  function handleModal() {
+    setModal(modal ? false : true);
+  }
 
   useEffect(() => {
     setSelectedIndex(data.ADEPTA_SORORITAS);
@@ -41,18 +42,10 @@ function App() {
       <Heading>40k Index Calculator</Heading>
       {/* selectedIndex ? <TotalPoints /> : <IndexSelection /> */}
       {/* <List /> */}
-      <Button>Add Unit</Button>
-      <UnitList>
-        {selectedIndex
-          ? Object.keys(selectedIndex.units).map((key, index) => (
-              <UnitCard
-                key={index}
-                unitName={key}
-                points={selectedIndex.units[key].points}
-              />
-            ))
-          : null}
-      </UnitList>
+      <Button color="affirmative" onClickHandler={handleModal}>
+        Add Unit
+      </Button>
+      {modal && <Modal data={selectedIndex} modalHandler={handleModal} />}
     </AppContainer>
   );
 }
