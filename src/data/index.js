@@ -1,0 +1,8 @@
+import ADEPTA_SORORITAS from "./ADEPTA_SORORITAS";
+
+const data = {
+  ADEPTA_SORORITAS: ADEPTA_SORORITAS,
+  ADEPTA_SORORITAS2: ADEPTA_SORORITAS,
+};
+
+export default data;
