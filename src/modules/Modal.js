@@ -20,7 +20,7 @@ const ModalScreen = styled.div`
   border: 1px solid blue;
 `;
 
-const Modal = ({ data, modalHandler }) => {
+const Modal = ({ data, modalHandler, addUnit }) => {
   return (
     <ModalScreen>
       <div style={{ width: 24 }}>
@@ -35,6 +35,8 @@ const Modal = ({ data, modalHandler }) => {
                 key={index}
                 unitName={key}
                 points={data.units[key].points}
+                addUnit={addUnit}
+                modalHandler={modalHandler}
               />
             ))
           : null}
