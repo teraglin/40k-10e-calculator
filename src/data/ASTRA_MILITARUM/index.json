@@ -1,0 +1,322 @@
+{
+  "Aegis Defence Line": {
+    "points": {
+      "1": 145
+    }
+  },
+  "Armoured Sentinels": {
+    "points": {
+      "1": 70,
+      "2": 140,
+      "3": 210
+    }
+  },
+  "Attilan Rough Riders": {
+    "points": {
+      "5": 80,
+      "10": 160
+    }
+  },
+  "Baneblade": {
+    "points": {
+      "1": 540
+    }
+  },
+  "Banehammer": {
+    "points": {
+      "1": 490
+    }
+  },
+  "Banesword": {
+    "points": {
+      "1": 515
+    }
+  },
+  "Basilisk": {
+    "points": {
+      "1": 110
+    }
+  },
+  "Bullgryn Squad": {
+    "points": {
+      "3": 90,
+      "6": 180
+    }
+  },
+  "Cadian Castellan": {
+    "points": {
+      "1": 50
+    }
+  },
+  "Cadian Command Squad": {
+    "points": {
+      "5": 65
+    }
+  },
+  "Cadian Shock Troops": {
+    "points": {
+      "10": 65,
+      "20": 130
+    }
+  },
+  "Catachan Jungle Fighters": {
+    "points": {
+      "10": 65,
+      "20": 130
+    }
+  },
+  "Chimera": {
+    "points": {
+      "1": 85
+    }
+  },
+  "Commissar": {
+    "points": {
+      "1": 35
+    }
+  },
+  "Death Korps of Krieg": {
+    "points": {
+      "10": 65,
+      "20": 130
+    }
+  },
+  "Deathstrike": {
+    "points": {
+      "1": 135
+    }
+  },
+  "Doomhammer": {
+    "points": {
+      "1": 455
+    }
+  },
+  "Field Ordnance Battery": {
+    "points": {
+      "2": 100
+    }
+  },
+  "Gaunt’s Ghosts": {
+    "points": {
+      "6": 115
+    }
+  },
+  "Heavy Weapons Squad": {
+    "points": {
+      "3": 60
+    }
+  },
+  "Hellhammer": {
+    "points": {
+      "1": 510
+    }
+  },
+  "Hellhound": {
+    "points": {
+      "1": 125
+    }
+  },
+  "Hydra": {
+    "points": {
+      "1": 95
+    }
+  },
+  "Infantry Squad": {
+    "points": {
+      "9-10": 65,
+      "18-20": 130
+    }
+  },
+  "‘Iron Hand’ Straken": {
+    "points": {
+      "1": 80
+    }
+  },
+  "Kasrkin": {
+    "points": {
+      "10": 120
+    }
+  },
+  "Leman Russ Battle Tank": {
+    "points": {
+      "1": 195
+    }
+  },
+  "Leman Russ Demolisher": {
+    "points": {
+      "1": 220
+    }
+  },
+  "Leman Russ Eradicator": {
+    "points": {
+      "1": 180
+    }
+  },
+  "Leman Russ Executioner": {
+    "points": {
+      "1": 195
+    }
+  },
+  "Leman Russ Exterminator": {
+    "points": {
+      "1": 200
+    }
+  },
+  "Leman Russ Punisher": {
+    "points": {
+      "1": 180
+    }
+  },
+  "Leman Russ Vanquisher": {
+    "points": {
+      "1": 190
+    }
+  },
+  "Lord Solar Leontus": {
+    "points": {
+      "1": 125
+    }
+  },
+  "Manticore": {
+    "points": {
+      "1": 105
+    }
+  },
+  "Militarum Tempestus Command Squad": {
+    "points": {
+      "5": 80
+    }
+  },
+  "Munitorum Servitors": {
+    "points": {
+      "4": 35
+    }
+  },
+  "Nork Deddog": {
+    "points": {
+      "1": 70
+    }
+  },
+  "Ogryn Bodyguard": {
+    "points": {
+      "1": 40
+    }
+  },
+  "Ogryn Squad": {
+    "points": {
+      "3": 75,
+      "6": 150
+    }
+  },
+  "Platoon Command Squad": {
+    "points": {
+      "4-5": 60
+    }
+  },
+  "Primaris Psyker": {
+    "points": {
+      "1": 60
+    }
+  },
+  "Ratling Snipers": {
+    "points": {
+      "5": 70
+    }
+  },
+  "Regimental Attachés": {
+    "points": {
+      "3": 40
+    }
+  },
+  "Regimental Enginseer": {
+    "points": {
+      "1": 45
+    }
+  },
+  "Regimental Preacher": {
+    "points": {
+      "1": 35
+    }
+  },
+  "Rogal Dorn Battle Tank": {
+    "points": {
+      "1": 285
+    }
+  },
+  "Scout Sentinels": {
+    "points": {
+      "1": 50,
+      "2:": 100,
+      "3": 150
+    }
+  },
+  "Sergeant Harker": {
+    "points": {
+      "1": 60
+    }
+  },
+  "Shadowsword": {
+    "points": {
+      "1": 440
+    }
+  },
+  "Sly Marbo": {
+    "points": {
+      "1": 75
+    }
+  },
+  "Stormlord": {
+    "points": {
+      "1": 460
+    }
+  },
+  "Stormsword": {
+    "points": {
+      "1": 520
+    }
+  },
+  "Tank Commander": {
+    "points": {
+      "1": 240
+    }
+  },
+  "Taurox": {
+    "points": {
+      "1": 65
+    }
+  },
+  "Taurox Prime": {
+    "points": {
+      "1": 90
+    }
+  },
+  "Tempestus Scions": {
+    "points": {
+      "5": 60,
+      "10": 120
+    }
+  },
+  "Ursula Creed": {
+    "points": {
+      "1": 55
+    }
+  },
+  "Valkyrie": {
+    "points": {
+      "1": 200
+    }
+  },
+  "Wyvern": {
+    "points": {
+      "1": 90
+    }
+  },
+  "Detatchment Enhancements": {
+    "points": {
+      "Death Mask of Ollanius": 10,
+      "Drill Commander": 20,
+      "Grand Strategist": 15,
+      "Kurov's Aquila": 40
+    }
+  }
+}

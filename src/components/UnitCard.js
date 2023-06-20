@@ -62,7 +62,7 @@ const UnitCard = ({ unitName, points, addUnit, modalHandler }) => {
         {Object.keys(points).map((key, index) => (
           <ModelGroup key={index}>
             <ModelNumber>
-              {key} {unitName === "Detatchment Enhancements" ? "model" : ""}
+              {key} {unitName === "Detatchment Enhancements" ? "" : "model"}
               {key === "1" || unitName === "Detatchment Enhancements"
                 ? ""
                 : "s"}
