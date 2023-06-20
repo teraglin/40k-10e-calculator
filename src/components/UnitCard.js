@@ -41,6 +41,7 @@ const ModelGroup = styled.div`
 `;
 const ModelNumber = styled.h5`
   width: 100%;
+  height: 100%;
   text-align: center;
   border: 1px solid black;
 `;

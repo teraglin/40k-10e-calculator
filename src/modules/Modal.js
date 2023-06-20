@@ -3,6 +3,7 @@ import styled from "styled-components";
 import UnitList from "./UnitList";
 import Button from "../components/Button";
 import UnitCard from "../components/UnitCard";
+import { breakpoints } from "../utils/breakpoints";
 
 const ModalScreen = styled.div`
   position: absolute;
@@ -17,6 +18,10 @@ const ModalScreen = styled.div`
   height: 100vh;
   overflow: scroll;
   padding: 32px;
+  max-width: 1440px;
+  @media (min-width: ${breakpoints.md}) {
+    display: none;
+  }
 `;
 
 const CloseButton = styled.div`

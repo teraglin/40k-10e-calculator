@@ -4,8 +4,10 @@ import data from "./data";
 import Button from "./components/Button";
 import Modal from "./modules/Modal";
 import UnitList from "./modules/UnitList";
+import UnitCard from "./components/UnitCard";
 import UnitListCard from "./components/UnitListCard";
 import { Icon } from "@iconify/react";
+import { breakpoints } from "./utils/breakpoints";
 
 // console.log("data", data);
 
@@ -16,6 +18,39 @@ const AppContainer = styled.div`
   padding: 16px 32px;
   gap: 16px;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (min-width: ${breakpoints.md}) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+`;
+
+const ResponsiveContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media (min-width: ${breakpoints.md}) {
+    width: 50%;
+    flex-shrink: 0;
+    height: calc(100vh - 32px);
+    overflow: scroll;
+  }
+`;
+
+const ResponsiveUnitList = styled.div`
+  display: none;
+  @media (min-width: ${breakpoints.md}) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    display: block;
+    height: calc(100vh - 32px);
+    overflow: scroll;
+    flex-shrink: 0;
+  }
 `;
 
 const Heading = styled.h1`
@@ -128,41 +163,57 @@ function App() {
 
   return (
     <AppContainer>
-      <Heading>40k Index Calculator</Heading>
-      <IndexSelectContainer>
-        <IndexLabel for="indexSheet">Select an index</IndexLabel>
-        <IndexSelect id="indexSheet" onChange={handleIndexChange.bind(this)}>
-          {Object.keys(data).map((key, index) => (
-            <option value={key} key={index}>
-              {key.replace("_", " ")}
-            </option>
-          ))}
-        </IndexSelect>
-      </IndexSelectContainer>
-      {selectedIndexTitle.length > 0 && (
-        <>
-          <IndexTitle>{selectedIndexTitle}</IndexTitle>
-          <Button onClickHandler={handleModal}>
-            Add Unit <Icon icon="ic:baseline-plus" />
-          </Button>
-          {points > 0 && <Points>{points}pts</Points>}
-          {unitList.length > 0 && (
-            <UnitList>
-              {unitList.map((unit, index) => (
-                <UnitListCard
-                  key={index}
-                  unitName={unit.name}
-                  models={unit.models}
-                  points={pointValue(unit.name, unit.models)}
-                  subtractUnit={subtractUnit}
-                >
-                  {unit.name}
-                </UnitListCard>
-              ))}
-            </UnitList>
-          )}
-        </>
-      )}
+      <ResponsiveContainer>
+        <Heading>40k Index Calculator</Heading>
+        <IndexSelectContainer>
+          <IndexLabel htmlFor="indexSheet">Select an index</IndexLabel>
+          <IndexSelect id="indexSheet" onChange={handleIndexChange.bind(this)}>
+            {Object.keys(data).map((key, index) => (
+              <option value={key} key={index}>
+                {key.replace("_", " ")}
+              </option>
+            ))}
+          </IndexSelect>
+        </IndexSelectContainer>
+        {selectedIndexTitle.length > 0 && (
+          <>
+            <IndexTitle>{selectedIndexTitle}</IndexTitle>
+            <Button onClickHandler={handleModal}>
+              Add Unit <Icon icon="ic:baseline-plus" />
+            </Button>
+            {points > 0 && <Points>{points}pts</Points>}
+            {unitList.length > 0 && (
+              <UnitList>
+                {unitList.map((unit, index) => (
+                  <UnitListCard
+                    key={index}
+                    unitName={unit.name}
+                    models={unit.models}
+                    points={pointValue(unit.name, unit.models)}
+                    subtractUnit={subtractUnit}
+                  >
+                    {unit.name}
+                  </UnitListCard>
+                ))}
+              </UnitList>
+            )}
+          </>
+        )}
+      </ResponsiveContainer>
+      <ResponsiveUnitList>
+        <UnitList>
+          {selectedIndex.units &&
+            Object.keys(selectedIndex.units).map((key, index) => (
+              <UnitCard
+                key={index}
+                unitName={key}
+                points={selectedIndex.units[key].points}
+                addUnit={addUnit}
+                modalHandler={handleModal}
+              />
+            ))}
+        </UnitList>
+      </ResponsiveUnitList>
       {modal && (
         <Modal
           data={selectedIndex}
