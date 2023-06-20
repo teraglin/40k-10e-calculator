@@ -1,0 +1,139 @@
+{
+  "Archon": {
+    "points": {
+      "1": 85
+    }
+  },
+  "Beastmaster": {
+    "points": {
+      "7": 120
+    }
+  },
+  "Court of the Archon": {
+    "points": {
+      "4": 95
+    }
+  },
+  "Cronos": {
+    "points": {
+      "1": 50,
+      "2": 100
+    }
+  },
+  "Drazhar": {
+    "points": {
+      "1": 105
+    }
+  },
+  "Grotesques": {
+    "points": {
+      "3": 105,
+      "6": 210
+    }
+  },
+  "Haemonculus": {
+    "points": {
+      "1": 75
+    }
+  },
+  "Hellions": {
+    "points": {
+      "5": 110,
+      "10": 220
+    }
+  },
+  "Incubi": {
+    "points": {
+      "5": 85,
+      "10": 170
+    }
+  },
+  "Kabalite Warriors": {
+    "points": {
+      "10": 120
+    }
+  },
+  "Lelith Hesperax": {
+    "points": {
+      "1": 105
+    }
+  },
+  "Mandrakes": {
+    "points": {
+      "5": 70,
+      "10": 140
+    }
+  },
+  "Raider": {
+    "points": {
+      "1": 90
+    }
+  },
+  "Ravager": {
+    "points": {
+      "1": 95
+    }
+  },
+  "Razorwing Jetfighter": {
+    "points": {
+      "1": 170
+    }
+  },
+  "Reavers": {
+    "points": {
+      "3": 75,
+      "6": 150
+    }
+  },
+  "Scourges": {
+    "points": {
+      "5": 120,
+      "10": 200
+    }
+  },
+  "Succubus": {
+    "points": {
+      "1": 70
+    }
+  },
+  "Talos": {
+    "points": {
+      "1": 90,
+      "2": 180
+    }
+  },
+  "Urien Rakarth": {
+    "points": {
+      "1": 105
+    }
+  },
+  "Venom": {
+    "points": {
+      "1": 80
+    }
+  },
+  "Voidraven Bomber": {
+    "points": {
+      "1": 195
+    }
+  },
+  "Wracks": {
+    "points": {
+      "5": 65,
+      "10": 130
+    }
+  },
+  "Wyches": {
+    "points": {
+      "10": 110
+    }
+  },
+  "Detatchment Enhancements": {
+    "points": {
+      "Crucible of Malediction": 10,
+      "Blood Dancer": 20,
+      "Labyrinthine Cunning": 30,
+      "The Art of Pain": 25
+    }
+  }
+}
