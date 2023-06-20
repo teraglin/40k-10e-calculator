@@ -48,6 +48,7 @@ const ModelNumber = styled.h5`
 const UnitCard = ({ unitName, points, addUnit, modalHandler }) => {
   function handleClick(e) {
     e.preventDefault();
+    console.log(e.target.value);
     addUnit(unitName, e.target.value);
     modalHandler();
   }
@@ -61,11 +62,7 @@ const UnitCard = ({ unitName, points, addUnit, modalHandler }) => {
             <ModelNumber>
               {key} Model{key === "1" ? "" : "s"}
             </ModelNumber>
-            <Button
-              onClickHandler={(e) => handleClick(e)}
-              value={points[key]}
-              color="affirmative"
-            >
+            <Button onClickHandler={(e) => handleClick(e)} value={key}>
               +{points[key]}
             </Button>
           </ModelGroup>

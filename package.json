@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.0",
     "styled-components": "^6.0.0-rc.3"
   }
 }

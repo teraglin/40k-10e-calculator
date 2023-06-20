@@ -8,7 +8,7 @@ const ModalScreen = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  background: rgb(255, 255, 255, 0.9);
+  background: white;
   align-items: center;
   gap: 32px;
   top: 0;
@@ -16,18 +16,28 @@ const ModalScreen = styled.div`
   width: 100vw;
   height: 100vh;
   overflow: scroll;
-  padding: 16px 32px;
-  border: 1px solid blue;
+  padding: 32px;
+`;
+
+const CloseButton = styled.div`
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
 `;
 
 const Modal = ({ data, modalHandler, addUnit }) => {
   return (
     <ModalScreen>
-      <div style={{ width: 24 }}>
-        <Button color="negative" onClickHandler={modalHandler}>
+      <CloseButton>
+        <Button color="negative" small onClickHandler={modalHandler}>
           X
         </Button>
-      </div>
+      </CloseButton>
       <UnitList>
         {data
           ? Object.keys(data.units).map((key, index) => (

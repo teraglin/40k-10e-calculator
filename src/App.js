@@ -3,6 +3,9 @@ import styled from "styled-components";
 import data from "./data";
 import Button from "./components/Button";
 import Modal from "./modules/Modal";
+import UnitList from "./modules/UnitList";
+import UnitListCard from "./components/UnitListCard";
+import { Icon } from "@iconify/react";
 
 // console.log("data", data);
 
@@ -35,6 +38,10 @@ function App() {
   const [points, setPoints] = useState(0);
   const [unitList, setUnitList] = useState([]);
 
+  function pointValue(name, models) {
+    return selectedIndex.units[name].points[models];
+  }
+
   function handleModal() {
     setModal(modal ? false : true);
   }
@@ -43,13 +50,26 @@ function App() {
     setPoints(parseInt(points) + parseInt(addedPoints));
   }
 
-  function handleSubtractPoints(subtractedPoints) {
+  function subtractPoints(subtractedPoints) {
     setPoints(parseInt(points) - parseInt(subtractedPoints));
   }
 
-  function addUnit(name, points) {
-    addPoints(points);
-    setUnitList(...unitList, { name: name, points: points });
+  function addUnit(name, models) {
+    addPoints(pointValue(name, models));
+    setUnitList([...unitList, { name: name, models: models }]);
+  }
+
+  function subtractUnit(name, models) {
+    subtractPoints(pointValue(name, models));
+    const tempList = unitList;
+    const findeIndex = unitList.findIndex(
+      (e) => e.name === name && e.models === models
+    );
+    console.log("name", name);
+    console.log("models", models);
+    console.log(findeIndex);
+    tempList.splice(findeIndex, 1);
+    setUnitList(tempList);
   }
 
   useEffect(() => {
@@ -60,23 +80,27 @@ function App() {
     console.log(unitList);
   }, [unitList]);
 
-  // console.log("selectedIndex", selectedIndex);
-
   return (
     <AppContainer>
       <Heading>40k Index Calculator</Heading>
-      {/* selectedIndex ? <TotalPoints /> : <IndexSelection /> */}
-      {/* <List /> */}
-      <Button color="affirmative" onClickHandler={handleModal}>
-        Add Unit
+      <Button onClickHandler={handleModal}>
+        Add Unit <Icon icon="ic:baseline-plus" />
       </Button>
       {points > 0 && <Points>{points}pts</Points>}
       {unitList.length > 0 && (
-        <ul>
+        <UnitList>
           {unitList.map((unit, index) => (
-            <li>{unit[index].name}</li>
+            <UnitListCard
+              key={index}
+              unitName={unit.name}
+              models={unit.models}
+              points={pointValue(unit.name, unit.models)}
+              subtractUnit={subtractUnit}
+            >
+              {unit.name}
+            </UnitListCard>
           ))}
-        </ul>
+        </UnitList>
       )}
       {modal && (
         <Modal
