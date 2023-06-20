@@ -51,10 +51,22 @@ const ResponsiveUnitList = styled.div`
   }
 `;
 
+const HeadingContainer = styled.div`
+  margin: 0 auto;
+`;
+
 const Heading = styled.h1`
   color: black;
   border: 2px solid black;
   padding: 8px;
+  margin: 0 auto;
+  text-align: center;
+`;
+
+const SubHeading = styled.h6`
+  color: white;
+  background: black;
+  padding: 4px 8px;
   margin: 0 auto;
   text-align: center;
 `;
@@ -155,7 +167,10 @@ function App() {
   return (
     <AppContainer>
       <ResponsiveContainer>
-        <Heading>40k Index Calculator</Heading>
+        <HeadingContainer>
+          <Heading>40k INDEX CALCULATOR</Heading>
+          <SubHeading>for 10th edition</SubHeading>
+        </HeadingContainer>
         <IndexSelectContainer>
           <IndexLabel htmlFor="indexSheet">Select an index</IndexLabel>
           <IndexSelect id="indexSheet" onChange={handleIndexChange.bind(this)}>
