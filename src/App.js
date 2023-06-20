@@ -20,9 +20,42 @@ const AppContainer = styled.div`
 
 const Heading = styled.h1`
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 8px;
   margin: 0 auto;
+  text-align: center;
+`;
+
+const IndexSelectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  background: lightgrey;
+  padding: 8px;
+`;
+
+const IndexLabel = styled.label`
+  font-weight: bold;
+  text-transform: uppercase;
+`;
+
+const IndexSelect = styled.select`
+  width: 100%;
+  border: 2px solid white;
+  background: black;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+`;
+
+const IndexTitle = styled.h2`
+  border: 2px solid black;
+  width: 100%;
+  padding: 8px;
   text-align: center;
 `;
 
@@ -33,7 +66,8 @@ const Points = styled.h2`
 `;
 
 function App() {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState({});
+  const [selectedIndexTitle, setSelectedIndexTitle] = useState("");
   const [modal, setModal] = useState(false);
   const [points, setPoints] = useState(0);
   const [unitList, setUnitList] = useState([]);
@@ -72,8 +106,20 @@ function App() {
     setUnitList(tempList);
   }
 
+  function newIndex(index) {
+    setUnitList([]);
+    setPoints(0);
+    setSelectedIndex(data[index]);
+    setSelectedIndexTitle(index.replace("_", " "));
+  }
+
+  function handleIndexChange(e) {
+    e.preventDefault();
+    newIndex(e.target.value);
+  }
+
   useEffect(() => {
-    setSelectedIndex(data.ADEPTA_SORORITAS);
+    newIndex("ADEPTA_SORORITAS");
   }, []);
 
   useEffect(() => {
@@ -83,24 +129,39 @@ function App() {
   return (
     <AppContainer>
       <Heading>40k Index Calculator</Heading>
-      <Button onClickHandler={handleModal}>
-        Add Unit <Icon icon="ic:baseline-plus" />
-      </Button>
-      {points > 0 && <Points>{points}pts</Points>}
-      {unitList.length > 0 && (
-        <UnitList>
-          {unitList.map((unit, index) => (
-            <UnitListCard
-              key={index}
-              unitName={unit.name}
-              models={unit.models}
-              points={pointValue(unit.name, unit.models)}
-              subtractUnit={subtractUnit}
-            >
-              {unit.name}
-            </UnitListCard>
+      <IndexSelectContainer>
+        <IndexLabel for="indexSheet">Select an index</IndexLabel>
+        <IndexSelect id="indexSheet" onChange={handleIndexChange.bind(this)}>
+          {Object.keys(data).map((key, index) => (
+            <option value={key} key={index}>
+              {key.replace("_", " ")}
+            </option>
           ))}
-        </UnitList>
+        </IndexSelect>
+      </IndexSelectContainer>
+      {selectedIndexTitle.length > 0 && (
+        <>
+          <IndexTitle>{selectedIndexTitle}</IndexTitle>
+          <Button onClickHandler={handleModal}>
+            Add Unit <Icon icon="ic:baseline-plus" />
+          </Button>
+          {points > 0 && <Points>{points}pts</Points>}
+          {unitList.length > 0 && (
+            <UnitList>
+              {unitList.map((unit, index) => (
+                <UnitListCard
+                  key={index}
+                  unitName={unit.name}
+                  models={unit.models}
+                  points={pointValue(unit.name, unit.models)}
+                  subtractUnit={subtractUnit}
+                >
+                  {unit.name}
+                </UnitListCard>
+              ))}
+            </UnitList>
+          )}
+        </>
       )}
       {modal && (
         <Modal

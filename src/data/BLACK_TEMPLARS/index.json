@@ -1,0 +1,85 @@
+{
+  "units": {
+    "Black Templars Gladiator Lancer": {
+      "points": {
+        "1": 160
+      }
+    },
+    "Black Templars Gladiator Reaper": {
+      "points": {
+        "1": 170
+      }
+    },
+    "Black Templars Gladiator Valiant": {
+      "points": {
+        "1": 180
+      }
+    },
+    "Black Templars Impulsor": {
+      "points": {
+        "1": 115
+      }
+    },
+    "Black Templars Repulsor": {
+      "points": {
+        "1": 220
+      }
+    },
+    "Black Templars Repulsor Executioner": {
+      "points": {
+        "1": 245
+      }
+    },
+    "Castellan": {
+      "points": {
+        "1": 70
+      }
+    },
+    "Chaplain Grimaldus": {
+      "points": {
+        "4": 120
+      }
+    },
+    "Crusader Squad": {
+      "points": {
+        "1 Sword Brother and 4 Initiates": 75,
+        "1 Sword Brother and 9 Initiates": 145,
+        "1 Sword Brother, 4 Initiates and 5 Neophytes": 145,
+        "1 Sword Brother, 9 Initiates and 10 Neophytes": 290
+      }
+    },
+    "High Marshal Helbrecht": {
+      "points": {
+        "1": 105
+      }
+    },
+    "Marshal": {
+      "points": {
+        "1": 75
+      }
+    },
+    "Primaris Crusader Squad": {
+      "points": {
+        "1 Sword Brother, 5 Initiates and 4 Neophytes": 160,
+        "1 Sword Brother, 11 Initiates and 8 Neophytes": 320
+      }
+    },
+    "Primaris Sword Brethren": {
+      "points": {
+        "5": 150,
+        "11": 330
+      }
+    },
+    "The Emperor’s Champion": {
+      "points": {
+        "1": 85
+      }
+    }
+  },
+  "detatchmentEnhancements": {
+    "Perdition’s Edge": 15,
+    "Sigismund’s Seal": 20,
+    "Tännhauser’s Bones": 35,
+    "Witchseeker Bolts": 10
+  }
+}
