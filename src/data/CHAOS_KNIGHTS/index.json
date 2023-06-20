@@ -1,0 +1,60 @@
+{
+  "Knight Abominant": {
+    "points": {
+      "1": 395
+    }
+  },
+  "Knight Desecrator": {
+    "points": {
+      "1": 390
+    }
+  },
+  "Knight Despoiler": {
+    "points": {
+      "1": 410
+    }
+  },
+  "Knight Rampager": {
+    "points": {
+      "1": 395
+    }
+  },
+  "Knight Tyrant": {
+    "points": {
+      "1": 485
+    }
+  },
+  "War Dog Brigand": {
+    "points": {
+      "1": 150
+    }
+  },
+  "War Dog Executioner": {
+    "points": {
+      "1": 135
+    }
+  },
+  "War Dog Huntsman": {
+    "points": {
+      "1": 140
+    }
+  },
+  "War Dog Karnivore": {
+    "points": {
+      "1": 160
+    }
+  },
+  "War Dog Stalker": {
+    "points": {
+      "1": 135
+    }
+  },
+  "Detatchment Enhancements": {
+    "points": {
+      "Lord of Dread": 35,
+      "Aura of Terror": 25,
+      "The Traitor’s Mark": 30,
+      "Panoply of the Cursed Knight": 40
+    }
+  }
+}
