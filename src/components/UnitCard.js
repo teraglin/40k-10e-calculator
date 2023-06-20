@@ -26,7 +26,7 @@ const UnitName = styled.h4`
 const ButtonContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: ${(props) => (props.$detatchment ? "column" : "row")};
   gap: 4px;
   /* border: 1px solid white; */
   padding: 8px;
@@ -49,7 +49,6 @@ const ModelNumber = styled.h5`
 const UnitCard = ({ unitName, points, addUnit, modalHandler }) => {
   function handleClick(e) {
     e.preventDefault();
-    console.log(e.target.value);
     addUnit(unitName, e.target.value);
     modalHandler();
   }
@@ -57,11 +56,16 @@ const UnitCard = ({ unitName, points, addUnit, modalHandler }) => {
   return (
     <UnitCardContainer>
       <UnitName>{unitName}</UnitName>
-      <ButtonContainer>
+      <ButtonContainer
+        $detatchment={unitName === "Detatchment Enhancements" ? true : false}
+      >
         {Object.keys(points).map((key, index) => (
           <ModelGroup key={index}>
             <ModelNumber>
-              {key} Model{key === "1" ? "" : "s"}
+              {key} {unitName === "Detatchment Enhancements" ? "model" : ""}
+              {key === "1" || unitName === "Detatchment Enhancements"
+                ? ""
+                : "s"}
             </ModelNumber>
             <Button onClickHandler={(e) => handleClick(e)} value={key}>
               +{points[key]}

@@ -9,8 +9,6 @@ import UnitListCard from "./components/UnitListCard";
 import { Icon } from "@iconify/react";
 import { breakpoints } from "./utils/breakpoints";
 
-// console.log("data", data);
-
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -108,7 +106,7 @@ function App() {
   const [unitList, setUnitList] = useState([]);
 
   function pointValue(name, models) {
-    return selectedIndex.units[name].points[models];
+    return selectedIndex[name].points[models];
   }
 
   function handleModal() {
@@ -134,9 +132,6 @@ function App() {
     const findeIndex = unitList.findIndex(
       (e) => e.name === name && e.models === models
     );
-    console.log("name", name);
-    console.log("models", models);
-    console.log(findeIndex);
     tempList.splice(findeIndex, 1);
     setUnitList(tempList);
   }
@@ -156,10 +151,6 @@ function App() {
   useEffect(() => {
     newIndex("ADEPTA_SORORITAS");
   }, []);
-
-  useEffect(() => {
-    console.log(unitList);
-  }, [unitList]);
 
   return (
     <AppContainer>
@@ -202,12 +193,12 @@ function App() {
       </ResponsiveContainer>
       <ResponsiveUnitList>
         <UnitList>
-          {selectedIndex.units &&
-            Object.keys(selectedIndex.units).map((key, index) => (
+          {selectedIndex &&
+            Object.keys(selectedIndex).map((key, index) => (
               <UnitCard
                 key={index}
                 unitName={key}
-                points={selectedIndex.units[key].points}
+                points={selectedIndex[key].points}
                 addUnit={addUnit}
                 modalHandler={handleModal}
               />

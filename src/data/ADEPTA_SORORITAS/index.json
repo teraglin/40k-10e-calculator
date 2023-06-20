@@ -1,187 +1,181 @@
 {
-  "units": {
-    "Aestred Thurga and Agathae Dolan": {
-      "points": {
-        "2": 70
-      }
-    },
-    "Arco-flagellants": {
-      "points": {
-        "3": 45,
-        "10": 150
-      }
-    },
-    "Battle Sisters Squad": {
-      "points": {
-        "10": 110
-      }
-    },
-    "Canoness": {
-      "points": {
-        "1": 60
-      }
-    },
-    "Castigator": {
-      "points": {
-        "1": 150
-      }
-    },
-    "Celestian Sacresants": {
-      "points": {
-        "5": 65,
-        "10": 130
-      }
-    },
-    "Crusaders": {
-      "points": {
-        "2": 20,
-        "4": 40,
-        "6": 60
-      }
-    },
-    "Daemonifuge": {
-      "points": {
-        "2": 80
-      }
-    },
-    "Death Cult Assassins": {
-      "points": {
-        "2": 35,
-        "4": 70,
-        "6": 105
-      }
-    },
-    "Dialogus": {
-      "points": {
-        "1": 35
-      }
-    },
-    "Dogmata": {
-      "points": {
-        "1": 50
-      }
-    },
-    "Dominion Squad": {
-      "points": {
-        "10": 130
-      }
-    },
-    "Exorcist": {
-      "points": {
-        "1": 140
-      }
-    },
-    "Hospitaller": {
-      "points": {
-        "1": 40
-      }
-    },
-    "Imagifier": {
-      "points": {
-        "1": 40
-      }
-    },
-    "Immolator": {
-      "points": {
-        "1": 130
-      }
-    },
-    "Junith Eruita": {
-      "points": {
-        "1": 100
-      }
-    },
-    "Missionary": {
-      "points": {
-        "1": 30
-      }
-    },
-    "Mortifiers": {
-      "points": {
-        "1": 60,
-        "2": 120
-      }
-    },
-    "Morvenn Vahl": {
-      "points": {
-        "1": 135
-      }
-    },
-    "Palatine": {
-      "points": {
-        "1": 55
-      }
-    },
-    "Paragon Warsuits": {
-      "points": {
-        "3": 240
-      }
-    },
-    "Penitent Engines": {
-      "points": {
-        "1": 60,
-        "2": 120
-      }
-    },
-    "Preacher": {
-      "points": {
-        "1": 45
-      }
-    },
-    "Repentia Squad": {
-      "points": {
-        "5": 75,
-        "10": 150
-      }
-    },
-    "Retributor Squad": {
-      "points": {
-        "5": 130
-      }
-    },
-    "Saint Celestine": {
-      "points": {
-        "3": 150
-      }
-    },
-    "Seraphim Squad": {
-      "points": {
-        "5": 70,
-        "10": 140
-      }
-    },
-    "Seraphim Squad": {
-      "points": {
-        "5": 70,
-        "10": 140
-      }
-    },
-    "Sisters Novitiate Squad": {
-      "points": {
-        "10": 90
-      }
-    },
-    "Sororitas Rhino": {
-      "points": {
-        "1": 80
-      }
-    },
-    "Triumph of Saint Katherine": {
-      "points": {
-        "1": 150
-      }
-    },
-    "Zephyrim Squad": {
-      "points": {
-        "5": 70,
-        "10": 140
-      }
+  "Aestred Thurga and Agathae Dolan": {
+    "points": {
+      "2": 70
     }
   },
-  "detatchmentEnhancements": {
-    "Blade of Saint Ellynor": 15,
-    "Litanies of Faith": 25,
-    "Mantle of Ophelia": 20,
-    "Saintly Example": 10
+  "Arco-flagellants": {
+    "points": {
+      "3": 45,
+      "10": 150
+    }
+  },
+  "Battle Sisters Squad": {
+    "points": {
+      "10": 110
+    }
+  },
+  "Canoness": {
+    "points": {
+      "1": 60
+    }
+  },
+  "Castigator": {
+    "points": {
+      "1": 150
+    }
+  },
+  "Celestian Sacresants": {
+    "points": {
+      "5": 65,
+      "10": 130
+    }
+  },
+  "Crusaders": {
+    "points": {
+      "2": 20,
+      "4": 40,
+      "6": 60
+    }
+  },
+  "Daemonifuge": {
+    "points": {
+      "2": 80
+    }
+  },
+  "Death Cult Assassins": {
+    "points": {
+      "2": 35,
+      "4": 70,
+      "6": 105
+    }
+  },
+  "Dialogus": {
+    "points": {
+      "1": 35
+    }
+  },
+  "Dogmata": {
+    "points": {
+      "1": 50
+    }
+  },
+  "Dominion Squad": {
+    "points": {
+      "10": 130
+    }
+  },
+  "Exorcist": {
+    "points": {
+      "1": 140
+    }
+  },
+  "Hospitaller": {
+    "points": {
+      "1": 40
+    }
+  },
+  "Imagifier": {
+    "points": {
+      "1": 40
+    }
+  },
+  "Immolator": {
+    "points": {
+      "1": 130
+    }
+  },
+  "Junith Eruita": {
+    "points": {
+      "1": 100
+    }
+  },
+  "Missionary": {
+    "points": {
+      "1": 30
+    }
+  },
+  "Mortifiers": {
+    "points": {
+      "1": 60,
+      "2": 120
+    }
+  },
+  "Morvenn Vahl": {
+    "points": {
+      "1": 135
+    }
+  },
+  "Palatine": {
+    "points": {
+      "1": 55
+    }
+  },
+  "Paragon Warsuits": {
+    "points": {
+      "3": 240
+    }
+  },
+  "Penitent Engines": {
+    "points": {
+      "1": 60,
+      "2": 120
+    }
+  },
+  "Preacher": {
+    "points": {
+      "1": 45
+    }
+  },
+  "Repentia Squad": {
+    "points": {
+      "5": 75,
+      "10": 150
+    }
+  },
+  "Retributor Squad": {
+    "points": {
+      "5": 130
+    }
+  },
+  "Saint Celestine": {
+    "points": {
+      "3": 150
+    }
+  },
+  "Seraphim Squad": {
+    "points": {
+      "5": 70,
+      "10": 140
+    }
+  },
+  "Sisters Novitiate Squad": {
+    "points": {
+      "10": 90
+    }
+  },
+  "Sororitas Rhino": {
+    "points": {
+      "1": 80
+    }
+  },
+  "Triumph of Saint Katherine": {
+    "points": {
+      "1": 150
+    }
+  },
+  "Zephyrim Squad": {
+    "points": {
+      "5": 70,
+      "10": 140
+    }
+  },
+  "Detatchment Enhancements": {
+    "points": {
+      "Blade of Saint Ellynor": 15,
+      "Litanies of Faith": 25,
+      "Mantle of Ophelia": 20,
+      "Saintly Example": 10
+    }
   }
 }

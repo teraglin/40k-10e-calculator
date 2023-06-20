@@ -37,7 +37,9 @@ const UnitListCard = ({ unitName, models, points, subtractUnit }) => {
     <UnitCardContainer>
       <div>
         <UnitText>{unitName}</UnitText>
-        <UnitText>x{models}</UnitText>
+        <UnitText>
+          {unitName === "Detatchment Enhancements" ? "" : "x"} {models}
+        </UnitText>
         <UnitText>{points}pts</UnitText>
       </div>
       <Button color="negative" small onClickHandler={handleClick}>

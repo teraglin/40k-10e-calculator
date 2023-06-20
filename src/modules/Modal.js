@@ -45,11 +45,11 @@ const Modal = ({ data, modalHandler, addUnit }) => {
       </CloseButton>
       <UnitList>
         {data
-          ? Object.keys(data.units).map((key, index) => (
+          ? Object.keys(data).map((key, index) => (
               <UnitCard
                 key={index}
                 unitName={key}
-                points={data.units[key].points}
+                points={data[key].points}
                 addUnit={addUnit}
                 modalHandler={modalHandler}
               />
