@@ -1,0 +1,170 @@
+{
+  "Archaeopter Fusilave": {
+    "points": {
+      "1": 160
+    }
+  },
+  "Archaeopter Stratoraptor": {
+    "points": {
+      "1": 165
+    }
+  },
+  "Archaeopter Transvector": {
+    "points": {
+      "1": 155
+    }
+  },
+  "Belisarius Cawl": {
+    "points": {
+      "1": 185
+    }
+  },
+  "Corpuscarii Electro-Priests": {
+    "points": {
+      "5": 65,
+      "10": 130
+    }
+  },
+  "Cybernetica Datasmith": {
+    "points": {
+      "1": 35
+    }
+  },
+  "Fulgurite Electro-Priests": {
+    "points": {
+      "5": 80,
+      "10": 160
+    }
+  },
+  "Ironstrider Ballistarii": {
+    "points": {
+      "1": 50,
+      "2": 100,
+      "3": 150
+    }
+  },
+  "Kastelan Robots": {
+    "points": {
+      "2": 215,
+      "4": 430
+    }
+  },
+  "Kataphron Breachers": {
+    "points": {
+      "3": 150,
+      "6": 300
+    }
+  },
+  "Kataphron Destroyers": {
+    "points": {
+      "3": 120,
+      "6": 240
+    }
+  },
+  "Onager Dunecrawler": {
+    "points": {
+      "1": 140
+    }
+  },
+  "Pteraxii Skystalkers": {
+    "points": {
+      "5": 70,
+      "10": 140
+    }
+  },
+  "Pteraxii Sterylizors": {
+    "points": {
+      "5": 75,
+      "10": 150
+    }
+  },
+  "Serberys Raiders": {
+    "points": {
+      "3": 75,
+      "6": 150
+    }
+  },
+  "Serberys Sulphurhounds": {
+    "points": {
+      "3": 65,
+      "6": 130
+    }
+  },
+  "Servitors": {
+    "points": {
+      "4": 50
+    }
+  },
+  "Sicarian Infiltrators": {
+    "points": {
+      "5": 80,
+      "10": 160
+    }
+  },
+  "Sicarian Ruststalkers": {
+    "points": {
+      "5": 75,
+      "10": 150
+    }
+  },
+  "Skitarii Marshal": {
+    "points": {
+      "1": 45
+    }
+  },
+  "Skitarii Rangers": {
+    "points": {
+      "10": 125
+    }
+  },
+  "Skitarii Vanguard": {
+    "points": {
+      "10": 100
+    }
+  },
+  "Skorpius Disintegrator": {
+    "points": {
+      "1": 195
+    }
+  },
+  "Skorpius Dunerider": {
+    "points": {
+      "1": 80
+    }
+  },
+  "Sydonian Dragoons": {
+    "points": {
+      "1": 75,
+      "2": 150,
+      "3": 225
+    }
+  },
+  "Tech-Priest Dominus": {
+    "points": {
+      "1": 75
+    }
+  },
+  "Tech-Priest Enginseer": {
+    "points": {
+      "1": 45
+    }
+  },
+  "Tech-Priest Manipulus": {
+    "points": {
+      "1": 60
+    }
+  },
+  "Technoarcheologist": {
+    "points": {
+      "1": 45
+    }
+  },
+  "Detatchment Enhancements": {
+    "points": {
+      "Archived Purge Protocols": 10,
+      "Excoriating Emanation": 25,
+      "Master Annihilator": 35,
+      "Omni-steriliser": 20
+    }
+  }
+}
